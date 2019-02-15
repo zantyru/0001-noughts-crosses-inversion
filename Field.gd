@@ -141,12 +141,12 @@ func is_line_empty(coords):
     var result = true
     var c = coords.col
     var r = coords.row
-    var s = field.get_cell(c, r)
+    var s = get_cell(c, r)
     while s != null:
         if s != CONST.SIGNUM.EMPTY:
             result = false
             break
         c += coords.dcol
         r += coords.drow
-        s = field.get_cell(c, r)
+        s = get_cell(c, r)
     return result
