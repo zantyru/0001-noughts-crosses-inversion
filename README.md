@@ -1,10 +1,10 @@
 # Noughts & crosses and inversion
 
-## GOAL
+### GOAL
 The player who succeeds in placing four of their marks in a horizontal, vertical, or diagonal row wins the game.
 
-## TURN
+### TURN
 Place own mark in a cell or press buttons of inversion.
 
-## INVERSION
+### INVERSION
 It is marks replacement: "X" -> "O", "O" -> "X".
