@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Godot-specific ignores
 .import/
@@ -6,3 +7,6 @@ export_presets.cfg
 
 # Mono-specific ignores
 .mono/
+=======
+/.import/
+>>>>>>> Upload all files to repo.

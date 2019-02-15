@@ -1,0 +1,596 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scenes2/menu/Menu.gd" type="Script" id=1]
+[ext_resource path="res://spoilers/images2/menu-background.png" type="Texture" id=2]
+[ext_resource path="res://spoilers/fonts/cmunvi.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://scenes2/_global/Button600x100.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes2/_global/Button300x100.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes2/_global/Button100x40.tscn" type="PackedScene" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 60
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 19
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 50
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=4]
+
+size = 32
+use_mipmaps = false
+use_filter = false
+extra_spacing_top = 6
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=5]
+
+size = 22
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Menu" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MenuBackground" type="TextureRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 14.0
+rect_min_size = Vector2( 600, 200 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0.941176, 0.941176, 0.941176, 1 )
+custom_constants/shadow_offset_x = 5
+custom_constants/shadow_offset_y = 3
+text = "KEY_LOGO"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
+
+[node name="Labels" type="GridContainer" parent="." index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = 310.0
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 590, 290 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/vseparation = 10
+custom_constants/hseparation = 10
+columns = 2
+_sections_unfolded = [ "Rect" ]
+
+[node name="MMLBL_PLAYER_O" type="Label" parent="Labels" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 290.0
+margin_bottom = 90.0
+rect_min_size = Vector2( 290, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.376471, 0.376471, 0.376471, 1 )
+text = "MMLBL_PLAYER_O"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="MMLBL_PLAYER_X" type="Label" parent="Labels" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_right = 594.0
+margin_bottom = 90.0
+rect_min_size = Vector2( 290, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.376471, 0.376471, 0.376471, 1 )
+text = "MMLBL_PLAYER_X"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="MMLBL_DIFFICULTY" type="Label" parent="Labels" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 100.0
+margin_right = 290.0
+margin_bottom = 190.0
+rect_min_size = Vector2( 290, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.376471, 0.376471, 0.376471, 1 )
+text = "MMLBL_DIFFICULTY"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="MMLBL_FIRST_TURN_BY" type="Label" parent="Labels" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 100.0
+margin_right = 594.0
+margin_bottom = 190.0
+rect_min_size = Vector2( 290, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.376471, 0.376471, 0.376471, 1 )
+text = "MMLBL_FIRST_TURN_BY"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="MMLBL_LANGUAGE" type="Label" parent="Labels" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 200.0
+margin_right = 290.0
+margin_bottom = 290.0
+rect_min_size = Vector2( 290, 90 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.376471, 0.376471, 0.376471, 1 )
+text = "MMLBL_LANGUAGE"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." index="3"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 200.0
+margin_right = 50.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 600, 400 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 0
+alignment = 0
+
+[node name="PlayButton" parent="VBoxContainer" index="0" instance=ExtResource( 4 )]
+
+rect_clip_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/PlayButton" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -300.0
+margin_top = -85.0
+margin_right = 300.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MMBTN_PLAY"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="HBoxContainer1" type="HBoxContainer" parent="VBoxContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 100.0
+margin_right = 600.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 600, 100 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 0
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="PlayerCircleTypeButton" parent="VBoxContainer/HBoxContainer1" index="0" instance=ExtResource( 5 )]
+
+margin_right = 300.0
+margin_bottom = 100.0
+rect_clip_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer1/PlayerCircleTypeButton" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -150.0
+margin_top = -85.0
+margin_right = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "KEY_HUMAN"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="PlayerCrossTypeButton" parent="VBoxContainer/HBoxContainer1" index="1" instance=ExtResource( 5 )]
+
+editor/display_folded = true
+margin_left = 300.0
+margin_right = 600.0
+margin_bottom = 100.0
+rect_clip_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer1/PlayerCrossTypeButton" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -150.0
+margin_top = -85.0
+margin_right = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "KEY_HUMAN"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 200.0
+margin_right = 600.0
+margin_bottom = 300.0
+rect_min_size = Vector2( 600, 100 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 0
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="DifficultyChoiceButton" parent="VBoxContainer/HBoxContainer2" index="0" instance=ExtResource( 5 )]
+
+editor/display_folded = true
+margin_right = 300.0
+margin_bottom = 100.0
+rect_clip_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2/DifficultyChoiceButton" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -150.0
+margin_top = -85.0
+margin_right = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "KEY_DIFFICULTY_LOW"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="FirstTurnChoiceButton" parent="VBoxContainer/HBoxContainer2" index="1" instance=ExtResource( 5 )]
+
+margin_left = 300.0
+margin_right = 600.0
+margin_bottom = 100.0
+rect_clip_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2/FirstTurnChoiceButton" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -150.0
+margin_top = -85.0
+margin_right = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "KEY_CIRCLE"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 300.0
+margin_right = 600.0
+margin_bottom = 400.0
+rect_min_size = Vector2( 600, 100 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 0
+alignment = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="LanguageButton" parent="VBoxContainer/HBoxContainer3" index="0" instance=ExtResource( 5 )]
+
+editor/display_folded = true
+margin_right = 300.0
+margin_bottom = 100.0
+rect_clip_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3/LanguageButton" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -150.0
+margin_top = -85.0
+margin_right = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "KEY_LANGUAGE"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="QuitButton" parent="VBoxContainer/HBoxContainer3" index="1" instance=ExtResource( 5 )]
+
+margin_left = 300.0
+margin_right = 600.0
+margin_bottom = 100.0
+rect_clip_content = true
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3/QuitButton" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -150.0
+margin_top = -85.0
+margin_right = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "MMBTN_QUIT"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="ShowInstructionButton" parent="." index="4" instance=ExtResource( 6 )]
+
+editor/display_folded = true
+margin_left = 486.0
+margin_top = 210.0
+margin_right = 586.0
+margin_bottom = 250.0
+
+[node name="Label" type="Label" parent="ShowInstructionButton" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "KEY_HOW"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[connection signal="pressed" from="VBoxContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer1/PlayerCircleTypeButton" to="." method="_on_PlayerCircleTypeButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer1/PlayerCrossTypeButton" to="." method="_on_PlayerCrossTypeButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/DifficultyChoiceButton" to="." method="_on_DifficultyChoiceButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer2/FirstTurnChoiceButton" to="." method="_on_FirstTurnChoiceButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/LanguageButton" to="." method="_on_LanguageButton_pressed"]
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer3/QuitButton" to="." method="_on_QuitButton_pressed"]
+
+[connection signal="pressed" from="ShowInstructionButton" to="." method="_on_ShowInstructionButton_pressed"]
+
+

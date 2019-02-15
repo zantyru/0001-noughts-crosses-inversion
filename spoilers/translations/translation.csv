@@ -1,0 +1,49 @@
+id,en,ru
+MMBTN_PLAY,Play,Играть
+MMLBL_PLAYER_O,Player «O» is,Игрок «O» - это
+MMLBL_PLAYER_X,Player «X» is,Игрок «X» - это
+KEY_HUMAN,A human,Человек
+KEY_COMPUTER,The computer,Компьютер
+MMLBL_DIFFICULTY,Difficulty is,Сложность
+KEY_DIFFICULTY_LOW,Low,Низкая
+KEY_DIFFICULTY_MEDIUM,Medium,Средняя
+KEY_DIFFICULTY_HIGH,High,Высокая
+MMLBL_FIRST_TURN_BY,First turn by,Первыми ходят
+KEY_CIRCLE,Noughts,Нолики
+KEY_CROSS,Crosses,Крестики
+MMLBL_LANGUAGE,Language / язык,Язык / language
+KEY_LANGUAGE,English,Русский
+MMBTN_QUIT,Quit,Выйти
+NTBTN_PLAY_AGAIN,Play again,Сыграть ещё
+NTBTN_BACK_TO_MENU,Back to the menu,В главное меню
+NTBTN_RESUME,Resume,Продолжить
+NOTIFY_O_WINS,Noughts wins!,Нолики выиграли!
+NOTIFY_X_WINS,Cross wins!,Крестики выиграли!
+NOTIFY_TIE,Tie!,Ничья!
+NOTIFY_WHAT_WOULD_YOU_LIKE,What would you like?,Чего бы вы хотели?
+KEY_STATS,"Available inversions:
+%s","Доступно инверсий:
+%s"
+KEY_LOGO,"Noughts & Crosses
+and inversion ","Крестики-нолики
+с инверсией"
+KEY_HOW,How?,Как?
+KEY_HELP,"                            .-= INSTRUCTION =-.
+
+GOAL
+The player who succeeds in placing four of their marks in a horizontal, vertical, or diagonal row wins the game.
+
+TURN
+Place own mark in a cell or press buttons of inversion.
+
+INVERSION
+It is marks replacement: «X» --> «O», «O» --> «X».","                            .-= ИНСТРУКЦИЯ =-.
+
+ЦЕЛЬ
+Выстроить в ряд 4 своих знака (по стоке, по столбцу или по диагонялям) раньше, чем это сделает противник.
+
+ХОД
+Поставить свой знак в клетку или нажать одну из кнопок инверсии.
+
+ИНВЕРСИЯ
+Это замена знаков: «X» --> «O», «O» --> «X»."

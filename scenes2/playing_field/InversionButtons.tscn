@@ -1,0 +1,309 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://scenes2/playing_field/InversionButtons.gd" type="Script" id=1]
+[ext_resource path="res://scenes2/playing_field/InversionButton_ColRow.tscn" type="PackedScene" id=2]
+[ext_resource path="res://spoilers/images2/inversion-colrow-button-atlas.png" type="Texture" id=3]
+[ext_resource path="res://scenes2/playing_field/InversionButton_Dia.tscn" type="PackedScene" id=4]
+
+
+[sub_resource type="AtlasTexture" id=1]
+
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 100, 100 )
+margin = Rect2( 0, 0, 0, 0 )
+filter_clip = false
+
+[sub_resource type="AtlasTexture" id=2]
+
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 100, 0, 100, 100 )
+margin = Rect2( 0, 0, 0, 0 )
+filter_clip = false
+
+[sub_resource type="AtlasTexture" id=3]
+
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 200, 0, 100, 100 )
+margin = Rect2( 0, 0, 0, 0 )
+filter_clip = false
+
+[sub_resource type="AtlasTexture" id=4]
+
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 300, 0, 100, 100 )
+margin = Rect2( 0, 0, 0, 0 )
+filter_clip = false
+
+[node name="InversionButtons" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 600.0
+margin_bottom = 600.0
+rect_min_size = Vector2( 600, 600 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource( 1 )
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_group_": true,
+"_edit_horizontal_guides_": [ 100.0, 200.0, 300.0, 400.0, 500.0, 0.0, 600.0 ],
+"_edit_vertical_guides_": [ 100.0, 200.0, 300.0, 400.0, 500.0, 0.0, 600.0 ]
+}
+
+[node name="Top_Col0" parent="." index="0" instance=ExtResource( 2 )]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -200.0
+margin_top = -300.0
+margin_right = -100.0
+margin_bottom = -200.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+
+[node name="Top_Col1" parent="." index="1" instance=ExtResource( 2 )]
+
+margin_left = 200.0
+margin_top = 0.0
+margin_right = 300.0
+margin_bottom = 100.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+number = 1
+
+[node name="Top_Col2" parent="." index="2" instance=ExtResource( 2 )]
+
+margin_left = 300.0
+margin_top = 0.0
+margin_right = 400.0
+margin_bottom = 100.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+number = 2
+
+[node name="Top_Col3" parent="." index="3" instance=ExtResource( 2 )]
+
+margin_left = 400.0
+margin_top = 0.0
+margin_right = 500.0
+margin_bottom = 100.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+number = 3
+
+[node name="Bottom_Col0" parent="." index="4" instance=ExtResource( 2 )]
+
+margin_left = 100.0
+margin_top = 500.0
+margin_right = 200.0
+margin_bottom = 600.0
+rect_rotation = 180.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+
+[node name="Bottom_Col1" parent="." index="5" instance=ExtResource( 2 )]
+
+margin_left = 200.0
+margin_top = 500.0
+margin_right = 300.0
+margin_bottom = 600.0
+rect_rotation = 180.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+number = 1
+
+[node name="Bottom_Col2" parent="." index="6" instance=ExtResource( 2 )]
+
+margin_left = 300.0
+margin_top = 500.0
+margin_right = 400.0
+margin_bottom = 600.0
+rect_rotation = 180.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+number = 2
+
+[node name="Bottom_Col3" parent="." index="7" instance=ExtResource( 2 )]
+
+margin_left = 400.0
+margin_top = 500.0
+margin_right = 500.0
+margin_bottom = 600.0
+rect_rotation = 180.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+number = 3
+
+[node name="Left_Row0" parent="." index="8" instance=ExtResource( 2 )]
+
+margin_left = 0.0
+margin_top = 100.0
+margin_right = 100.0
+margin_bottom = 200.0
+rect_rotation = 270.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+
+[node name="Left_Row1" parent="." index="9" instance=ExtResource( 2 )]
+
+margin_left = 0.0
+margin_top = 200.0
+margin_right = 100.0
+margin_bottom = 300.0
+rect_rotation = 270.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+number = 1
+
+[node name="Left_Row2" parent="." index="10" instance=ExtResource( 2 )]
+
+margin_left = 0.0
+margin_top = 300.0
+margin_right = 100.0
+margin_bottom = 400.0
+rect_rotation = 270.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+number = 2
+
+[node name="Left_Row3" parent="." index="11" instance=ExtResource( 2 )]
+
+margin_left = 0.0
+margin_top = 400.0
+margin_right = 100.0
+margin_bottom = 500.0
+rect_rotation = 270.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+number = 3
+
+[node name="Right_Row0" parent="." index="12" instance=ExtResource( 2 )]
+
+margin_left = 500.0
+margin_top = 100.0
+margin_right = 600.0
+margin_bottom = 200.0
+rect_rotation = 90.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+
+[node name="Right_Row1" parent="." index="13" instance=ExtResource( 2 )]
+
+margin_left = 500.0
+margin_top = 200.0
+margin_right = 600.0
+margin_bottom = 300.0
+rect_rotation = 90.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+number = 1
+
+[node name="Right_Row2" parent="." index="14" instance=ExtResource( 2 )]
+
+margin_left = 500.0
+margin_top = 300.0
+margin_right = 600.0
+margin_bottom = 400.0
+rect_rotation = 90.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+number = 2
+
+[node name="Right_Row3" parent="." index="15" instance=ExtResource( 2 )]
+
+margin_left = 500.0
+margin_top = 400.0
+margin_right = 600.0
+margin_bottom = 500.0
+rect_rotation = 90.0
+texture_normal = SubResource( 1 )
+texture_pressed = SubResource( 2 )
+texture_hover = SubResource( 3 )
+texture_disabled = SubResource( 4 )
+linetype = "Row"
+number = 3
+
+[node name="TopLeft_Dia0" parent="." index="16" instance=ExtResource( 4 )]
+
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 100.0
+margin_bottom = 100.0
+
+[node name="TopRight_Dia1" parent="." index="17" instance=ExtResource( 4 )]
+
+margin_left = 500.0
+margin_top = 0.0
+margin_right = 600.0
+margin_bottom = 100.0
+rect_rotation = 90.0
+number = 1
+
+[node name="BottomRight_Dia0" parent="." index="18" instance=ExtResource( 4 )]
+
+margin_left = 500.0
+margin_top = 500.0
+margin_right = 600.0
+margin_bottom = 600.0
+rect_rotation = 180.0
+
+[node name="BottomLeft_Dia1" parent="." index="19" instance=ExtResource( 4 )]
+
+margin_left = 0.0
+margin_top = 500.0
+margin_right = 100.0
+margin_bottom = 600.0
+rect_rotation = 270.0
+number = 1
+
+
