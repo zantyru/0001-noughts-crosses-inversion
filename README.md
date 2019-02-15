@@ -1,4 +1,4 @@
-This is my first game on Godot Engine v3.0.6.
+Uses Godot Engine v3.0.6. I made this game to get familiar with the engine (and for my portfolio).
 
 # Noughts & crosses and inversion
 
