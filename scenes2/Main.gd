@@ -236,9 +236,13 @@ func _on_inversion_requested(linetype, number):
     if game_is_finished or player.inversions < 1:
         return
     
+    var coords = CONST.parse_linetype_and_number(linetype, number)
+    
+    if field.is_line_empty(coords):
+        return
+    
     input_blocker.visible = true
     
-    var coords = CONST.parse_linetype_and_number(linetype, number)
     var s
     s = field.get_cell(coords.col, coords.row)
     while s != null:
@@ -290,7 +294,6 @@ func _on_Resume_pressed():
 # Main menu buttons
 
 func _on_Menu_playing_requested():
-    Global.save_settings(Global.get_settings_as_dictionary())
     start_game()
 
 
