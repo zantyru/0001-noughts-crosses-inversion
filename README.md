@@ -1,3 +1,5 @@
+This is my first game on Godot Engine v3.0.6.
+
 # Noughts & crosses and inversion
 
 ### GOAL
