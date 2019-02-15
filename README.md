@@ -10,3 +10,6 @@ Place own mark in a cell or press buttons of inversion.
 
 ### INVERSION
 It is marks replacement: "X" -> "O", "O" -> "X".
+
+## Download
+https://zantyru.itch.io/noughts-crosses-and-inversion
